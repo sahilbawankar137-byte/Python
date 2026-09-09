@@ -10,6 +10,7 @@ Basic Operations
 
 # Indexing
 S a h i l b a w a n  k  a  r
+
 0 1 2 3 4 5 6 7 8 9 10 11 12
 
 # Slicing
