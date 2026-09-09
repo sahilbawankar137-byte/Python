@@ -36,5 +36,100 @@ Variables
 
 Rules for identifiers
 
-<img width="756" height="117" alt="image" src="https://github.com/user-attachments/assets/f4a1b523-73b0-4cc8-8fe5-e36c0a3374b1" />
+1. Identifiers can be combination of uppercase and lowercase letters, digits or an underscore(\_).\
+    So **myVariable, variable\_1, variable\_for\_print** all are valid python identifiers.
+2. An identifier can not start with digit. So while **variable1** is valid, **1variable** is not valid.
+3. We can’t use special symbols like **#,@@,%,$** etc in our identifier.
+4. Identifier can be of any length.
 
+Data Types
+-Integers
+-String
+-Float
+-Boolen
+-None
+
+print(type(age)   <class 'int'>
+print(type(pi))  <class 'float'>
+print(complex_num)) <class 'bool'>
+print(type(A))  <class 'complex'>
+print(type(name))  <class 'str'?
+
+Keywords
+
+-Keywords are reserved words in python.
+*False should be uppercase
+
+<img width="521" height="272" alt="image" src="https://github.com/user-attachments/assets/adf0e892-62f5-4210-ad5d-a2d1a2e86b49" />
+
+Print Sum
+
+a = 2
+b = 5
+Sum = a + b
+Print(sum)
+
+Comments in Python
+
+# Single LIne comment
+
+"""
+Multi Line
+Comment
+"""
+
+Types of Operators
+
+An operator is a symbol that performs a certain operation between operands.
+-Arithmetic Operators (+.-.*,/,%,**)
+-Relational/Comparision Operators(==,!=,<,>,<=,>=)
+-Assignment Opertors(=,=+.-=,/=,%=,%+,**=)
+-Logical Operators(not,and,or)
+
+Type Conversion
+
+a,b = 1,2.0
+sum = a+b
+
+#error
+a,b = 1,"2"
+sum = a+b
+
+Type Casting
+a,b = 1,"2"
+c = int(b)
+sum = a+c
+
+<img width="498" height="410" alt="image" src="https://github.com/user-attachments/assets/9a5e8326-da65-46cd-8774-417549efd897" />
+
+Input in python
+
+-input() statement is used to accept values (using keyboard from user
+
+-input() #result for input() is always a str
+-int(input()) #int
+-float(input())
+
+Let's Practice
+1.write a program to input 2 numbers & print their sum.
+->
+  a = float(input("enter first value")
+  b = float(input)"enter second value")
+  print("sum",a+b)
+
+2.WAP to input side of a square & print its area.
+->
+side = float(input("enter:")
+print("Area",side*side)
+
+3.WAP to input 2 floating point numbers & print their average.
+->
+a = float(input("enter first number")
+b = float(input("enter second number")
+print("Avg",a+b/2)
+
+4. WAP to input 2 int numbers, a and b.
+   Print True if a is greater than or equal to b. If not print False.
+a = int(input("Enter first"))
+b = int(input("Enter second"))
+print(a<=b)
