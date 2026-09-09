@@ -50,9 +50,13 @@ hello world ----> Out put
 - None
 
 print(type(age)   <class 'int'>
+
 print(type(pi))  <class 'float'>
+
 print(complex_num)) <class 'bool'>
+
 print(type(A))  <class 'complex'>
+
 print(type(name))  <class 'str'?
 
 # Keywords
