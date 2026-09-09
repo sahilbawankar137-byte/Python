@@ -20,21 +20,21 @@ Print ----> Function
 hello world ----> Out put
 
 Python charecter set
--Letters --- A --- Z , a to z
--Digits  --- 0 --- 9
--Special Symbols(-,+,/,etc
--Whitespaces – Blank Space, tab, carriage return, newline, formfeed
--Other characters – Python can process all ASCII and Unicode characters as part of data or literals
+- Letters --- A --- Z , a to z
+- Digits  --- 0 --- 9
+- Special Symbols(-,+,/,etc
+- Whitespaces – Blank Space, tab, carriage return, newline, formfeed
+- Other characters – Python can process all ASCII and Unicode characters as part of data or literals
 
-Variables
+#Variables
 
 - A variable is a name given to a memory location in a program.
 
--name = "sahil"
--age = 23
--price = 35.99
+- name = "sahil"
+- age = 23
+- price = 35.99
 
-Rules for identifiers
+#Rules for identifiers
 
 1. Identifiers can be combination of uppercase and lowercase letters, digits or an underscore(\_).\
     So **myVariable, variable\_1, variable\_for\_print** all are valid python identifiers.
@@ -42,12 +42,12 @@ Rules for identifiers
 3. We can’t use special symbols like **#,@@,%,$** etc in our identifier.
 4. Identifier can be of any length.
 
-Data Types
--Integers
--String
--Float
--Boolen
--None
+#Data Types
+- Integers
+- String
+- Float
+- Boolen
+- None
 
 print(type(age)   <class 'int'>
 print(type(pi))  <class 'float'>
@@ -55,23 +55,23 @@ print(complex_num)) <class 'bool'>
 print(type(A))  <class 'complex'>
 print(type(name))  <class 'str'?
 
-Keywords
+#Keywords
 
--Keywords are reserved words in python.
+- Keywords are reserved words in python.
 *False should be uppercase
 
 <img width="521" height="272" alt="image" src="https://github.com/user-attachments/assets/adf0e892-62f5-4210-ad5d-a2d1a2e86b49" />
 
-Print Sum
+#Print Sum
 
 a = 2
 b = 5
 Sum = a + b
 Print(sum)
 
-Comments in Python
+#Comments in Python
 
-# Single LIne comment
+(#Single Line comment)
 
 """
 Multi Line
