@@ -70,14 +70,23 @@ else:
   70 > marks, grade = "D"
 
   -code
+  
   marks = int(input("enter your marks:"))
+  
   if(marks >= 90):
+  
      print("your grade is:A")
+     
   elif(90 > marks >= 80):
+  
      print("your grade is:B")
+     
   elif(80 > marks >= 80)
+  
      print("your grade is:c")
+     
   else:
+  
      print("your grade is:D")
 
 
