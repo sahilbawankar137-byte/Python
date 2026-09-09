@@ -1,7 +1,7 @@
                                             #PROGRAMING!
 
                              Machine<------------------Translator<------------------Python
-                    -     (ex.laptop,Pc)       (ex.Compiler/Interpreter)            (code)
+                          (ex.laptop,Pc)       (ex.Compiler/Interpreter)            (code)
 
 # What is python??
 
@@ -36,11 +36,11 @@ hello world ----> Out put
 
 # Rules for identifiers
 
-1. Identifiers can be combination of uppercase and lowercase letters, digits or an underscore(\_).\
+- 1. Identifiers can be combination of uppercase and lowercase letters, digits or an underscore(\_).\
     So **myVariable, variable\_1, variable\_for\_print** all are valid python identifiers.
-2. An identifier can not start with digit. So while **variable1** is valid, **1variable** is not valid.
-3. We can’t use special symbols like **#,@@,%,$** etc in our identifier.
-4. Identifier can be of any length.
+- 2. An identifier can not start with digit. So while **variable1** is valid, **1variable** is not valid.
+- 3. We can’t use special symbols like **#,@@,%,$** etc in our identifier.
+- 4. Identifier can be of any length.
 
 # Data Types
 - Integers
@@ -95,7 +95,7 @@ sum = a+b
 a,b = 1,"2"
 sum = a+b
 
-Type Casting
+# Type Casting
 a,b = 1,"2"
 c = int(b)
 sum = a+c
@@ -104,8 +104,8 @@ sum = a+c
 
 # Input in python
 
--input() statement is used to accept values (using keyboard from user
+- input() statement is used to accept values (using keyboard from user
 
--input() #result for input() is always a str
--int(input()) #int
--float(input())
+- input() #result for input() is always a str
+- int(input()) #int
+- float(input())
