@@ -40,11 +40,15 @@ str.count("am") #count the occurrence of substr in string
 
 # Let's Practice
 1.WAP to input user's first name & print its length.
+
 first = input("enter your name")
+
 print("lenth of your name is:",len(first))
 
 2.WAP to find the occurence of '$' in a string.
+
 str = "hi, i am a $ the $ symbol $ 99.99"
+
 print(str.count("$")
 
 # Condiational Statements 
