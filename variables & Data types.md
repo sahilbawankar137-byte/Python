@@ -35,5 +35,6 @@ Variables
 -price = 35.99
 
 Rules for identifiers
+
 <img width="756" height="117" alt="image" src="https://github.com/user-attachments/assets/f4a1b523-73b0-4cc8-8fe5-e36c0a3374b1" />
 
