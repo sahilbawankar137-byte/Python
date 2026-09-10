@@ -58,7 +58,7 @@ print(complex_num)) <class 'bool'>
 
 print(type(A))  <class 'complex'>
 
-print(type(name))  <class 'str'?
+print(type(name))  <class 'str'>
 
 # Keywords
 
