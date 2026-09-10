@@ -92,23 +92,32 @@ Comment
 # Types of Operators
 
 An operator is a symbol that performs a certain operation between operands.
--Arithmetic Operators (+.-.*,/,%,**)
--Relational/Comparision Operators(==,!=,<,>,<=,>=)
--Assignment Opertors(=,=+.-=,/=,%=,%+,**=)
--Logical Operators(not,and,or)
+
+1. Arithmetic Operators (+.-.*,/,%,**)
+
+2. Relational/Comparision Operators(==,!=,<,>,<=,>=)
+
+3. Assignment Opertors(=,=+.-=,/=,%=,%+,**=)
+
+4. Logical Operators(not,and,or)
 
 # Type Conversion
 
 a,b = 1,2.0
+
 sum = a+b
 
 # error
 a,b = 1,"2"
+
 sum = a+b
 
 # Type Casting
+
 a,b = 1,"2"
+
 c = int(b)
+
 sum = a+c
 
 <img width="498" height="410" alt="image" src="https://github.com/user-attachments/assets/9a5e8326-da65-46cd-8774-417549efd897" />
@@ -118,5 +127,7 @@ sum = a+c
 - input() statement is used to accept values (using keyboard from user
 
 - input() #result for input() is always a str
+  
 - int(input()) #int
+  
 - float(input())
