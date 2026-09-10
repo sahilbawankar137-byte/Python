@@ -70,17 +70,23 @@ print(type(name))  <class 'str'>
 # Print Sum
 
 a = 2
+
 b = 5
+
 Sum = a + b
+
 Print(sum)
 
 # Comments in Python
 
-(#Single Line comment)
+#Single Line comment,represent by '#'
 
 """
+
 Multi Line
+
 Comment
+
 """
 
 # Types of Operators
