@@ -17,6 +17,7 @@
 - Print("hellow word")
 
 Print ----> Function
+
 hello world ----> Out put
 
 # Python charecter set
