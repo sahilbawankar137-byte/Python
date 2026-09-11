@@ -96,7 +96,7 @@ student = {
 }
 
 
-print(list(student.keys()))
+1. print(list(student.keys()))
 
 print(len(student))
 
@@ -104,7 +104,7 @@ print(len(list(student.keys())))
 
 
                              
-print(student.values())
+2. print(student.values())
 
 print(list(student.values()))
 
