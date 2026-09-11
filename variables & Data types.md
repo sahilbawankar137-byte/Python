@@ -1,133 +1,218 @@
-                                            #PROGRAMING!
+# PROGRAMING!
 
-                             Machine<------------------Translator<------------------Python
-                          (ex.laptop,Pc)       (ex.Compiler/Interpreter)            (code)
+```text
+Machine <------------------ Translator <------------------ Python
+(ex. Laptop, PC)              (ex. Compiler/Interpreter)    (code)
+```
 
-# What is python??
+# What is Python??
 
+- Python is simple & easy
+- Free & open source
+- High level language
+- Developed by Guido Van Rossum
+- Portable
 
-  - Python is simple & easy
-  - Free & open source
-  - Hish level language
-  - Developed by Guido Van Rossum
-  - Portadle
+---
 
-# Our first code
+# Our First Code
 
-- Print("hellow word")
+```python
+print("hello world")
+```
 
-Print ----> Function
+```text
+print       ----> Function
 
-hello world ----> Out put
+hello world ----> Output
+```
 
-# Python charecter set
-- Letters --- A --- Z , a to z
-- Digits  --- 0 --- 9
-- Special Symbols(-,+,/,etc
-- Whitespaces – Blank Space, tab, carriage return, newline, formfeed
-- Other characters – Python can process all ASCII and Unicode characters as part of data or literals
+---
+
+# Python Character Set
+
+- **Letters** — A–Z, a–z
+- **Digits** — 0–9
+- **Special Symbols** — `-`, `+`, `/`, etc.
+- **Whitespaces** — Blank Space, tab, carriage return, newline, formfeed
+- **Other characters** — Python can process all ASCII and Unicode characters as part of data or literals
+
+---
 
 # Variables
 
 - A variable is a name given to a memory location in a program.
 
-- name = "sahil"
-- age = 23
-- price = 35.99
+```python
+name = "sahil"
 
-# Rules for identifiers
+age = 23
 
-1. Identifiers can be combination of uppercase and lowercase letters, digits or an underscore(\_).\
-  So **myVariable, variable\_1, variable\_for\_print** all are valid python identifiers.
-2. An identifier can not start with digit. So while **variable1** is valid, **1variable** is not valid.
-3. We can’t use special symbols like **#,@@,%,$** etc in our identifier.
+price = 35.99
+```
+
+---
+
+# Rules for Identifiers
+
+1. Identifiers can be a combination of uppercase and lowercase letters, digits or an underscore (`_`).
+
+   So **myVariable**, **variable_1**, **variable_for_print** all are valid Python identifiers.
+
+2. An identifier cannot start with a digit.
+
+   So while **variable1** is valid, **1variable** is not valid.
+
+3. We can't use special symbols like **#**, **@**, **%**, **$**, etc. in our identifier.
+
 4. Identifier can be of any length.
 
+---
+
 # Data Types
+
 - Integers
 - String
 - Float
-- Boolen
+- Boolean
 - None
 
-print(type(age)   <class 'int'>
+```python
+print(type(age))          # <class 'int'>
 
-print(type(pi))  <class 'float'>
+print(type(pi))           # <class 'float'>
 
-print(complex_num)) <class 'bool'>
+print(type(complex_num))  # <class 'bool'>
 
-print(type(A))  <class 'complex'>
+print(type(A))            # <class 'complex'>
 
-print(type(name))  <class 'str'>
+print(type(name))         # <class 'str'>
+```
+
+---
 
 # Keywords
 
-- Keywords are reserved words in python.
-*False should be uppercase
+- Keywords are reserved words in Python.
 
-<img width="521" height="272" alt="image" src="https://github.com/user-attachments/assets/adf0e892-62f5-4210-ad5d-a2d1a2e86b49" />
+> **False** should be uppercase.
+
+![Python Keywords](https://github.com/user-attachments/assets/adf0e892-62f5-4210-ad5d-a2d1a2e86b49)
+
+---
 
 # Print Sum
 
+```python
 a = 2
 
 b = 5
 
-Sum = a + b
+sum = a + b
 
-Print(sum)
+print(sum)
+```
+
+---
 
 # Comments in Python
 
-#Single Line comment,represent by '#'
+### Single Line Comment
 
+- Represented by `#`
+
+```python
+# Single Line comment
+```
+
+### Multi Line Comment
+
+```python
 """
-
 Multi Line
 
 Comment
-
 """
+```
+
+---
 
 # Types of Operators
 
 An operator is a symbol that performs a certain operation between operands.
 
-1. Arithmetic Operators (+.-.*,/,%,**)
+### 1. Arithmetic Operators
 
-2. Relational/Comparision Operators(==,!=,<,>,<=,>=)
+```text
++  -  *  /  %  **
+```
 
-3. Assignment Opertors(=,=+.-=,/=,%=,%+,**=)
+### 2. Relational / Comparison Operators
 
-4. Logical Operators(not,and,or)
+```text
+==  !=  <  >  <=  >=
+```
+
+### 3. Assignment Operators
+
+```text
+=  +=  -=  /=  %=  **=
+```
+
+### 4. Logical Operators
+
+```text
+not  and  or
+```
+
+---
 
 # Type Conversion
 
-a,b = 1,2.0
+```python
+a, b = 1, 2.0
 
-sum = a+b
+sum = a + b
+```
 
-# error
-a,b = 1,"2"
+### Error
 
-sum = a+b
+```python
+a, b = 1, "2"
+
+sum = a + b
+```
+
+---
 
 # Type Casting
 
-a,b = 1,"2"
+```python
+a, b = 1, "2"
 
 c = int(b)
 
-sum = a+c
+sum = a + c
+```
 
-<img width="498" height="410" alt="image" src="https://github.com/user-attachments/assets/9a5e8326-da65-46cd-8774-417549efd897" />
+![Type Casting](https://github.com/user-attachments/assets/9a5e8326-da65-46cd-8774-417549efd897)
 
-# Input in python
+---
 
-- input() statement is used to accept values (using keyboard from user
+# Input in Python
 
-- input() #result for input() is always a str
-  
-- int(input()) #int
-  
-- float(input())
+- `input()` statement is used to accept values using the keyboard from the user.
+
+```python
+input()
+```
+
+- Result for `input()` is always a `str`.
+
+```python
+input()       # str
+
+int(input())  # int
+
+float(input()) # float
+```
