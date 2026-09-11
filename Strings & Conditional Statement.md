@@ -1,83 +1,184 @@
 # Strings
-- string is data type that stores a sequence of characters.
 
-Basic Operations
-- concatenation
-  "hello" + "world" ----> "helloworld"
+- String is a data type that stores a sequence of characters.
 
-- length of str
-    len(str)
+---
+
+# Basic Operations
+
+### Concatenation
+
+```python
+"hello" + "world"  # "helloworld"
+```
+
+### Length of String
+
+```python
+len(str)
+```
+
+---
 
 # Indexing
-S a h i l b a w a n  k  a  r
 
-0 1 2 3 4 5 6 7 8 9 10 11 12
+```text
+S  a  h  i  l  b  a  w  a  n  k  a  r
+0  1  2  3  4  5  6  7  8  9  10 11 12
+```
 
-# Slicing
-- Accessing parts of a string
-
- - str[ starting_idx : ending_idx]#ending idx is  not included
- - str = "sahilbawankar" 
- - str[1 : 4] is "ahi"
- - str[1 : 4] is same as str[0 : 4]
- - str[1 : ] is same as str[1 : len(str)]
+---
 
 # Slicing
-- Nagative Index
+
+- Accessing parts of a string.
+
+```text
+str[starting_idx : ending_idx]
+```
+
+> Ending index is not included.
+
+```python
+str = "sahilbawankar"
+
+str[1:4]  # "ahi"
+
+str[0:4]  # same as str[1:4]
+
+str[1:]   # same as str[1:len(str)]
+```
+
+---
+
+# Slicing — Negative Index
+
+```text
  A  p  p  l  e
 -5 -4 -3 -2 -1
+```
 
-- str = "Apple"
-- str[-3 : -1] is "pl"
+```python
+str = "Apple"
 
-# string Function
-- str = "I am a coder."
-- str.endsWith("er.") #return true if string ends with substr
-- str.capitalize() #capitalizes 1st char
-- str.replace(old,new) #replaces all occurrencese of ald with new
-- str.find(word) #returns 1st indes of 1st occurrences
-- str.count("am") #count the occurrence of substr in string
+str[-3:-1]  # "pl"
+```
+
+---
+
+# String Function
+
+```python
+str = "I am a coder."
+```
+
+### `endswith()`
+
+```python
+str.endswith("er.")
+```
+
+- Returns `True` if the string ends with the given substring.
+
+### `capitalize()`
+
+```python
+str.capitalize()
+```
+
+- Capitalizes the first character.
+
+### `replace()`
+
+```python
+str.replace(old, new)
+```
+
+- Replaces all occurrences of `old` with `new`.
+
+### `find()`
+
+```python
+str.find(word)
+```
+
+- Returns the first index of the first occurrence.
+
+### `count()`
+
+```python
+str.count("am")
+```
+
+- Counts the occurrence of the substring in the string.
+
+---
 
 # Let's Practice
-- 1.WAP to input user's first name & print its length.
 
+## 1. WAP to input user's first name & print its length.
+
+```python
 first = input("enter your name")
 
-print("lenth of your name is:",len(first))
+print("length of your name is:", len(first))
+```
 
-- 2.WAP to find the occurence of '$' in a string.
+---
 
+## 2. WAP to find the occurrence of `$` in a string.
+
+```python
 str = "hi, i am a $ the $ symbol $ 99.99"
 
-print(str.count("$")
+print(str.count("$"))
+```
 
-# Condiational Statements 
-- if-elif-else(Statement1)
-
-if(condirion):
-  Statement1
-elif(condition):
-  Statement2
-else:
-  StatementN
+---
 
 # Conditional Statements
-- Grade students based on marks
 
-  marks >= 90, grade = "A"
-  90 > marks >= 80, grade = "B"
-  80 > marks >= 70, grade = "c"
-  70 > marks, grade = "D"
+- `if-elif-else` statements
 
-  - code
-  
-   marks >= 90, grade = "A"
-  
-  90 > marks >= 80, grade = "B"
-  
-  80 > marks >= 70, grade = "c"
-  
-  70 > marks, grade = "D"
+```python
+if(condition):
+    Statement1
 
+elif(condition):
+    Statement2
 
-  
+else:
+    StatementN
+```
+
+---
+
+# Conditional Statements
+
+## Grade Students Based on Marks
+
+```text
+marks >= 90       → grade = "A"
+
+90 > marks >= 80  → grade = "B"
+
+80 > marks >= 70  → grade = "C"
+
+70 > marks       → grade = "D"
+```
+
+### Code
+
+```python
+if marks >= 90:
+    grade = "A"
+
+elif 90 > marks >= 80:
+    grade = "B"
+
+elif 80 > marks >= 70:
+    grade = "C"
+
+else:
+    grade = "D"
+```
