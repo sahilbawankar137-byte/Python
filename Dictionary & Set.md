@@ -95,7 +95,7 @@ student = {
     
 }
 
-  
+                                                               
 1. print(list(student.keys()))
 
 - print(len(student))
@@ -103,7 +103,7 @@ student = {
 - print(len(list(student.keys())))
 
 
-
+                             
 2. print(student.values())
 
 - print(list(student.values()))
@@ -111,7 +111,7 @@ student = {
 - print(len(list(student.values())))
 
 
-
+                                                                              
 3. print((student.items()))
 
 - pairs = list(student.items())
@@ -124,7 +124,7 @@ student = {
 
 
 
-
+                                                                                   
 4. print(student.get("name")) #Same
 
 - print(student["name"]) #Same
@@ -135,14 +135,14 @@ student = {
 
 - print(student["name2"]) #error
 
-
+                                                                       
 
 5. student.update(list(new_dict.items()))
 
 - new_dict = {"city" : "Nagpur", "state" : "Maharashtra"}
 
 print(student)
-
+                                                                               
 
 
 - new_dict = {"name" : "andkita", "age" : 17}
