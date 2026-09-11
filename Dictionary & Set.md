@@ -98,17 +98,17 @@ student = {
 
 1. print(list(student.keys()))
 
-print(len(student))
+- print(len(student))
 
-print(len(list(student.keys())))
+- print(len(list(student.keys())))
 
 
                              
 2. print(student.values())
 
-print(list(student.values()))
+- print(list(student.values()))
 
-print(len(list(student.values())))
+- print(len(list(student.values())))
 
 
                                                                               
