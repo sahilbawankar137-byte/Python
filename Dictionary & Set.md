@@ -95,12 +95,12 @@ student = {
     
 }
 
-                                                               
-1. print(list(student.keys()))
 
-- print(len(student))
+print(list(student.keys()))
 
-- print(len(list(student.keys())))
+print(len(student))
+
+print(len(list(student.keys())))
 
 
                              
