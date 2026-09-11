@@ -104,11 +104,11 @@ print(len(list(student.keys())))
 
 
                              
-2. print(student.values())
+print(student.values())
 
-- print(list(student.values()))
+print(list(student.values()))
 
-- print(len(list(student.values())))
+print(len(list(student.values())))
 
 
                                                                               
