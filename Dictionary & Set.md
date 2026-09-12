@@ -194,3 +194,116 @@ print(student)
 ---
 
 # SET IN PYTHON
+
+- Set is the collection of the unordered items.
+- Each element in the set must be unique & immutable.
+
+```python
+collection = {1, 3, 4, 5, "hello", "world", "world"}
+
+print(collection)
+print(type(collection))
+```
+
+```python
+collection = {1, 2, 2, 2, "hello", "world", "world"}
+
+print(collection)
+print(type(collection))
+print(len(collection))  # total number of items
+```
+
+```python
+collection = {}  # empty dictionary
+
+print(type(collection))
+```
+
+```python
+collection = set()  # empty set syntax
+
+print(type(collection))
+```
+
+---
+
+# Set Methods
+
+## 1. `set.add(el)`
+
+- Adds an element to the set.
+
+```python
+collection = set()
+
+collection.add(2009)
+collection.add(7)
+collection.add(13)
+collection.add("sahil")
+```
+
+---
+
+## 2. `set.remove(el)`
+
+- Removes an element from the set.
+
+```python
+collection.remove(2009)
+
+print(collection)
+```
+
+---
+
+## 3. `set.clear()`
+
+- Empties the set.
+
+```python
+collection = {1, 3, 4, 5, "hello", "world", "world"}
+
+collection.clear()
+
+print(len(collection))
+```
+
+---
+
+## 4. `set.pop()`
+
+- Removes a random value.
+
+```python
+collection = {1, 3, 4, 5, "hello", "world", "world"}
+
+print(collection.pop())
+```
+
+---
+
+## 5. `set.union(set2)`
+
+- Combines both set values & returns a new set.
+
+```python
+set1 = {1, 2, 3}
+
+set2 = {2, 3, 4}
+
+print(set1.union(set2))
+```
+
+---
+
+## 6. `set.intersection(set2)`
+
+- Combines common values.
+
+```python
+set1 = {1, 2}
+
+set2 = {2, 3, 4}
+
+print(set1.intersection(set2))
+```
