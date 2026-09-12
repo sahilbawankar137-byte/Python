@@ -181,15 +181,13 @@ print(student["name2"]) # error
 ### 5.myDict.update(newDict)
 
 ```python
+new_dict = {"city" : "Nagpur", "state" : "Maharashtra"}
 student.update(list(new_dict.items()))
-
-new_dict = {
-    "city": "Nagpur",
-    "state": "Maharashtra"
-}
 
 print(student)
 ```
+
+<img width="1093" height="30" alt="image" src="https://github.com/user-attachments/assets/c3b9c782-9e34-4df7-a3f6-e788273fd50f" />
 
 ---
 
