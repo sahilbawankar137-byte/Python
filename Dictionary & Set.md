@@ -242,6 +242,8 @@ collection = set()  # empty set syntax
 print(type(collection))
 ```
 
+<img width="128" height="20" alt="image" src="https://github.com/user-attachments/assets/557b4982-c702-4fe3-998e-61bd61f54e71" />
+
 ---
 
 # Set Methods
