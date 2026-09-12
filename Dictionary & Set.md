@@ -154,6 +154,8 @@ print(list(student.items()))
 print(len(list(student.items())))
 ```
 
+<img width="857" height="92" alt="image" src="https://github.com/user-attachments/assets/c8321cd1-b372-4c24-a1ca-ba2b6a54f0f3" />
+
 ---
 
 ### 4.myDict.get("key")
