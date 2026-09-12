@@ -226,6 +226,8 @@ print(type(collection))
 print(len(collection))  # total number of items
 ```
 
+<img width="228" height="67" alt="image" src="https://github.com/user-attachments/assets/ba896b96-309f-45e1-b89b-bd38816bae0f" />
+
 ```python
 collection = {}  # empty dictionary
 
