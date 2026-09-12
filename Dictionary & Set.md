@@ -77,6 +77,8 @@ student = {
 print(student["subjects"]["chem"])
 ```
 
+<img width="26" height="15" alt="image" src="https://github.com/user-attachments/assets/c57e5c6e-83bb-4022-813a-1ae888b33e97" />
+
 ---
 
 # Method of dictionary
