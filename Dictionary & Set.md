@@ -28,6 +28,7 @@ print(info["topics"])
 
 print(info["is_adult"])
 ```
+<img width="145" height="90" alt="image" src="https://github.com/user-attachments/assets/f68b9fd5-e148-4b3b-a559-30ee34ab1b29" />
 
 ---
 
