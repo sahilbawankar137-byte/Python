@@ -112,7 +112,7 @@ student = {
 }
 ```
 
-### 1.
+### 1.myDict.keys()
 
 ```python
 print(list(student.keys()))
@@ -124,7 +124,7 @@ print(len(list(student.keys())))
 
 ---
 
-### 2.
+### 2.myDict.values()
 
 ```python
 print(student.values())
@@ -136,7 +136,7 @@ print(len(list(student.values())))
 
 ---
 
-### 3.
+### 3.myDict.items()
 
 ```python
 print(student.items())
@@ -152,7 +152,7 @@ print(len(list(student.items())))
 
 ---
 
-### 4.
+### 4.myDict.get("key")
 
 ```python
 print(student.get("name")) # Same
@@ -170,7 +170,7 @@ print(student["name2"]) # error
 
 ---
 
-### 5.
+### 5.myDict.update(newDict)
 
 ```python
 student.update(list(new_dict.items()))
