@@ -259,7 +259,11 @@ collection.add(2009)
 collection.add(7)
 collection.add(13)
 collection.add("sahil")
+
+print(collection)
 ```
+
+<img width="201" height="23" alt="image" src="https://github.com/user-attachments/assets/35b85c71-2802-4143-afbb-c33351c5acea" />
 
 ---
 
