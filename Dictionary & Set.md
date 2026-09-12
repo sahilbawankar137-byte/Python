@@ -340,3 +340,5 @@ set2 = {2, 3, 4}
 
 print(set1.intersection(set2))
 ```
+<img width="25" height="27" alt="image" src="https://github.com/user-attachments/assets/240e0bfc-7b66-483a-b842-5b5f877bb2e7" />
+
