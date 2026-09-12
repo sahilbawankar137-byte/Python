@@ -277,6 +277,8 @@ collection.remove(2009)
 print(collection)
 ```
 
+<img width="147" height="25" alt="image" src="https://github.com/user-attachments/assets/ad84f43e-568e-4c1c-b184-44e07426f16b" />
+
 ---
 
 ## 3. `set.clear()`
