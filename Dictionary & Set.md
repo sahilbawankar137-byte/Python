@@ -309,6 +309,10 @@ collection = {1, 3, 4, 5, "hello", "world", "world"}
 print(collection.pop())
 ```
 
+<img width="45" height="18" alt="image" src="https://github.com/user-attachments/assets/bddedea4-34f6-409c-98e1-5a20bd21d510" />
+
+<img width="28" height="18" alt="image" src="https://github.com/user-attachments/assets/6a6dd4ef-fbda-41b0-b9fd-15046b1ab2c4" />
+
 ---
 
 ## 5. `set.union(set2)`
