@@ -288,10 +288,14 @@ print(collection)
 ```python
 collection = {1, 3, 4, 5, "hello", "world", "world"}
 
+print(len(collection))
+
 collection.clear()
 
 print(len(collection))
 ```
+
+<img width="25" height="45" alt="image" src="https://github.com/user-attachments/assets/f01388f1-f585-4b20-852f-b188f71acf83" />
 
 ---
 
