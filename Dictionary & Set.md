@@ -234,6 +234,8 @@ collection = {}  # empty dictionary
 print(type(collection))
 ```
 
+<img width="142" height="23" alt="image" src="https://github.com/user-attachments/assets/aa437468-3c28-4a66-9d3e-92a5f7a68701" />
+
 ```python
 collection = set()  # empty set syntax
 
