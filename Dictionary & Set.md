@@ -193,12 +193,14 @@ print(student)
 
 ```python
 new_dict = {
-    "name": "andkita",
+    "name": "ankita",
     "age": 17
 }
 
 print(student)
 ```
+
+<img width="727" height="22" alt="image" src="https://github.com/user-attachments/assets/897e6439-95ac-4adb-86dd-180c381437c7" />
 
 ---
 
