@@ -122,6 +122,8 @@ print(len(student))
 print(len(list(student.keys())))
 ```
 
+<img width="197" height="67" alt="image" src="https://github.com/user-attachments/assets/168cdddd-efa0-4b63-a487-1606c4da77cc" />
+
 ---
 
 ### 2.myDict.values()
