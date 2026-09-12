@@ -166,7 +166,9 @@ print(student.get("name")) # Same
 print(student["name"]) # Same
 ```
 
-- Then why myDict.items()...because
+<img width="171" height="45" alt="image" src="https://github.com/user-attachments/assets/080a8a81-1ba5-452d-8818-a23956865a74" />
+
+- Then why myDict.get()...because
 
 ```python
 print(student.get("name2")) # no error -> None
