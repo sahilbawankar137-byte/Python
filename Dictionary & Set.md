@@ -325,6 +325,8 @@ set2 = {2, 3, 4}
 print(set1.union(set2))
 ```
 
+<img width="110" height="22" alt="image" src="https://github.com/user-attachments/assets/cc7fb374-3866-4e9b-9cb3-f622576c17e1" />
+
 ---
 
 ## 6. `set.intersection(set2)`
