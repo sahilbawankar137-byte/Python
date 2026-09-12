@@ -216,6 +216,8 @@ print(collection)
 print(type(collection))
 ```
 
+<img width="272" height="40" alt="image" src="https://github.com/user-attachments/assets/0481f6e1-f972-4b48-9f88-72129fb67937" />
+
 ```python
 collection = {1, 2, 2, 2, "hello", "world", "world"}
 
