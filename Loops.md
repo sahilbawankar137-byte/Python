@@ -181,7 +181,7 @@ while i <= 10:
 ```python
 i = 1
 
-while i <= 100:
+while i <= 10:
     if i % 2 != 0:
         i += 1
         continue
@@ -190,7 +190,8 @@ while i <= 100:
     i += 1
 ```
 
-![Output](https://github.com/user-attachments/assets/bfe17098-666e-4b09-9b8f-b5667cd9c985)
+<img width="257" height="125" alt="image" src="https://github.com/user-attachments/assets/5da55b7c-c6ed-4d82-86cf-618d43a40377" />
+
 
 ---
 
