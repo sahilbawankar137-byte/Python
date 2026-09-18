@@ -159,3 +159,135 @@ tup[0] = 43  # Not allowed in Python
 
 ```python id="h7q
 ```
+
+# 📚 Lists & Tuples — Let's Practice
+
+---
+
+## 📝 Practice Questions
+
+### 1️⃣ Store 3 Favorite Movies
+
+**Question:**
+Write a program to ask the user to enter the names of their **3 favorite movies** and store them in a list.
+
+```python
+movies = []
+
+mov1 = input("Enter first movie: ")
+mov2 = input("Enter second movie: ")
+mov3 = input("Enter third movie: ")
+
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+
+print(movies)
+```
+
+---
+
+### 2️⃣ Check for Palindrome
+
+**Question:**
+Write a program to check if a list contains a **palindrome** of elements.
+
+💡 **Hint:** Use the `copy()` method.
+
+```python
+list1 = [1, 2, 3, 2, 1]
+list2 = [1, "abc", "abc", 1]
+
+copy_list1 = list1.copy()
+copy_list1.reverse()
+
+copy_list2 = list2.copy()
+copy_list2.reverse()
+
+if copy_list1 == list1:
+    print("Palindrome")
+else:
+    print("NOT palindrome")
+
+if copy_list2 == list2:
+    print("Palindrome")
+else:
+    print("NOT palindrome")
+```
+
+### 💡 How it works
+
+```text
+Original List       Reversed Copy
+[1, 2, 3, 2, 1]  →  [1, 2, 3, 2, 1]  ✅ Palindrome
+
+[1, "abc", "abc", 1] → [1, "abc", "abc", 1] ✅ Palindrome
+```
+
+---
+
+### 3️⃣ Count Students with Grade "A"
+
+**Question:**
+Write a program to count the number of students with the **"A" grade** in the following tuple.
+
+```python
+tup1 = ("C", "D", "A", "A", "B", "B", "A")
+
+count = 0
+
+for grade in tup1:
+    if grade == "A":
+        count += 1
+
+print(count)
+```
+
+### 🔹 Output
+
+```text
+3
+```
+
+### ⚡ Easy Way — Using `count()`
+
+Since tuples have a built-in `count()` method, we can do the same thing in one line:
+
+```python
+grade = ("C", "D", "A", "A", "B", "B", "A")
+
+print(grade.count("A"))
+```
+
+### 🔹 Output
+
+```text
+3
+```
+
+> ⭐ **Remember:** `count()` returns how many times a particular value appears in a list or tuple.
+
+---
+
+## 🧠 Quick Revision
+
+| Concept        | Example                   |
+| -------------- | ------------------------- |
+| Create List    | `movies = []`             |
+| Add Element    | `movies.append("Dangal")` |
+| Copy List      | `list2 = list1.copy()`    |
+| Reverse List   | `list1.reverse()`         |
+| Create Tuple   | `tup = (1, 2, 3)`         |
+| Count in Tuple | `tup.count("A")`          |
+| Check Equality | `list1 == list2`          |
+
+---
+
+### 🚀 Key Takeaways
+
+* `append()` → adds an element to a list.
+* `copy()` → creates a copy of a list.
+* `reverse()` → reverses a list.
+* `count()` → counts how many times a value occurs.
+* Lists are **mutable** → can be changed.
+* Tuples are **immutable** → cannot be changed.
