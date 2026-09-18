@@ -326,3 +326,128 @@ print(name)
 ```python
 age = int(input("Enter your age: "
 ```
+
+# 📝 Let's Practice — Variables
+
+---
+
+## 1️⃣ Input 2 Numbers & Print Their Sum
+
+**Question:**
+Write a program to input 2 numbers and print their sum.
+
+```python
+a = float(input("Enter first value: "))
+b = float(input("Enter second value: "))
+
+print("Sum:", a + b)
+```
+
+### 🔹 Example Output
+
+```text
+Enter first value: 10
+Enter second value: 20
+Sum: 30.0
+```
+
+---
+
+## 2️⃣ Area of a Square
+
+**Question:**
+Write a program to input the side of a square and print its area.
+
+📐 **Formula:** `Area = side × side`
+
+```python
+side = float(input("Enter side: "))
+
+print("Area:", side * side)
+```
+
+### 🔹 Example Output
+
+```text
+Enter side: 5
+Area: 25.0
+```
+
+---
+
+## 3️⃣ Average of 2 Floating-Point Numbers
+
+**Question:**
+Write a program to input 2 floating-point numbers and print their average.
+
+```python
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+print("Average:", (a + b) / 2)
+```
+
+### 🔹 Example Output
+
+```text
+Enter first number: 10
+Enter second number: 20
+Average: 15.0
+```
+
+> ⚠️ **Important:**
+> `(a + b) / 2` is required.
+> `a + b / 2` gives a different result because of **operator precedence**.
+
+---
+
+## 4️⃣ Compare Two Numbers
+
+**Question:**
+Write a program to input 2 integer numbers `a` and `b`.
+Print `True` if `a` is **greater than or equal to** `b`. Otherwise, print `False`.
+
+```python
+a = int(input("Enter first: "))
+b = int(input("Enter second: "))
+
+print(a >= b)
+```
+
+### 🔹 Example Output
+
+```text
+Enter first: 10
+Enter second: 5
+True
+```
+
+```text
+Enter first: 3
+Enter second: 8
+False
+```
+
+---
+
+## 🧠 Quick Revision
+
+| Task                  | Code             |
+| --------------------- | ---------------- |
+| Take decimal input    | `float(input())` |
+| Take integer input    | `int(input())`   |
+| Addition              | `a + b`          |
+| Square area           | `side * side`    |
+| Average               | `(a + b) / 2`    |
+| Greater than or equal | `a >= b`         |
+| Print result          | `print()`        |
+
+---
+
+### 🚀 Remember
+
+* `input()` always takes input as a **string**.
+* Use `int()` for integer values.
+* Use `float()` for decimal values.
+* Use parentheses when needed to control the order of operations.
+* Comparison operators return **`True` or `False`**.
