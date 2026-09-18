@@ -200,3 +200,169 @@ else:
 ```
 
 > 💡 Python supports **chained comparisons** like `90 > marks >= 80`.
+
+# 📝 Let's Practice — Strings & Conditional Statements
+
+---
+
+## 🔤 Strings — Practice
+
+### 1️⃣ Find the Length of User's Name
+
+**Question:**
+Write a program to input the user's first name and print its length.
+
+```python
+first = input("Enter your name: ")
+
+print("Length of your name is:", len(first))
+```
+
+### 🔹 Example Output
+
+```text
+Enter your name: Sahil
+Length of your name is: 5
+```
+
+---
+
+### 2️⃣ Count the Occurrence of `$`
+
+**Question:**
+Write a program to find the number of occurrences of `$` in a string.
+
+```python
+text = "hi, i am a $ the $ symbol $ 99.99"
+
+print(text.count("$"))
+```
+
+### 🔹 Output
+
+```text
+3
+```
+
+> 💡 `count()` returns the number of times a particular character or substring occurs in a string.
+
+---
+
+# 🔀 Conditional Statements — Practice
+
+### 3️⃣ Check Odd or Even
+
+**Question:**
+Write a program to check if a number entered by the user is **odd or even**.
+
+```python
+num = int(input("Enter the number: "))
+
+rem = num % 2
+
+if rem == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+### 🔹 Example Output
+
+```text
+Enter the number: 8
+Even
+```
+
+```text
+Enter the number: 7
+Odd
+```
+
+> ⚠️ **Important:** Use `%` (modulus) to find the remainder.
+> `/` gives division result, while `%` gives remainder.
+
+---
+
+### 4️⃣ Check Multiple of 7
+
+**Question:**
+Write a program to check if a number is a **multiple of 7** or not.
+
+```python
+num = int(input("Enter number: "))
+
+rem = num % 7
+
+if rem == 0:
+    print("Your number is a multiple of 7")
+else:
+    print("Your number is not a multiple of 7")
+```
+
+### 🔹 Example Output
+
+```text
+Enter number: 21
+Your number is a multiple of 7
+```
+
+```text
+Enter number: 20
+Your number is not a multiple of 7
+```
+
+---
+
+### 5️⃣ Find the Greatest of 3 Numbers
+
+**Question:**
+Write a program to find the **greatest of 3 numbers** entered by the user.
+
+```python
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("The greatest value is:", a)
+elif b >= a and b >= c:
+    print("The greatest value is:", b)
+else:
+    print("The greatest value is:", c)
+```
+
+### 🔹 Example Output
+
+```text
+Enter first number: 25
+Enter second number: 18
+Enter third number: 12
+
+The greatest value is: 25
+```
+
+> 💡 `and` is used because the selected number must be greater than or equal to **both** other numbers.
+
+---
+
+## 🧠 Quick Revision
+
+| Problem       | Main Concept                |
+| ------------- | --------------------------- |
+| Name length   | `len()`                     |
+| Count `$`     | `count()`                   |
+| Odd / Even    | `% 2`                       |
+| Multiple of 7 | `% 7`                       |
+| Greatest of 3 | `if`, `elif`, `else`, `and` |
+
+---
+
+### 🚀 Key Takeaways
+
+* `len()` → finds the length of a string.
+* `count()` → counts occurrences of a character/string.
+* `%` → gives the remainder.
+* `if` → checks a condition.
+* `elif` → checks another condition.
+* `else` → runs when all previous conditions are false.
+* `and` → both conditions must be `True`.
