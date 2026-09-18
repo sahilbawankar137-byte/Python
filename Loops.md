@@ -1,17 +1,18 @@
-# Loops in Python
+# 🐍 Loops in Python
 
-- Loops are used to repeat instructions.
+* Loops are used to repeat instructions.
+* They help us execute the same block of code multiple times.
 
 ---
 
-# While Loops
+# 🔄 While Loops
 
 ```python
 while condition:
     # some work
 ```
 
-### Print "hello" 5 times
+### 👋 Print `"hello"` 5 times
 
 ```python
 count = 1
@@ -25,7 +26,7 @@ while count <= 5:
 
 ---
 
-### Print numbers from 1 to 5
+### 🔢 Print numbers from 5 to 1
 
 ```python
 i = 5
@@ -39,7 +40,7 @@ while i >= 1:
 
 ---
 
-### Infinite Iterator
+### ♾️ Infinite Loop
 
 ```python
 i = 5
@@ -49,11 +50,13 @@ while i >= 1:
     i += 1
 ```
 
+⚠️ Here, `i` keeps increasing while the condition `i >= 1` remains `True`, so the loop never ends.
+
 ---
 
-# Let's Practice
+# 📝 Let's Practice
 
-### Print numbers from 1 to 100
+### 1️⃣ Print numbers from 1 to 100
 
 ```python
 i = 1
@@ -65,7 +68,7 @@ while i <= 100:
 
 ---
 
-### Print numbers from 100 to 1
+### 2️⃣ Print numbers from 100 to 1
 
 ```python
 i = 100
@@ -77,7 +80,7 @@ while i >= 1:
 
 ---
 
-### Print the multiplication table of a number `n`
+### 3️⃣ Print the multiplication table of a number `n`
 
 ```python
 n = int(input("Enter a number to print its multiplication table: "))
@@ -93,7 +96,7 @@ while i <= 10:
 
 ---
 
-### Print the elements of the following list using while Loop
+### 4️⃣ Print the elements of the following list using `while` Loop
 
 ```text
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
@@ -113,7 +116,7 @@ while idx < len(nums):
 
 ---
 
-### Search for a number `X` in this tuple using Loop
+### 5️⃣ Search for a number `X` in this list using a loop
 
 ```python
 nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
@@ -126,19 +129,17 @@ while idx < len(nums):
     if nums[idx] == x:
         print("Number found at index:", idx)
     idx += 1
-else:
-    print("Number not found")
 ```
 
 ![Output](https://github.com/user-attachments/assets/013a135f-1788-440a-862c-a8277d8f6397)
 
 ---
 
-# Break & Continue
+# 🛑 Break & Continue
 
-### Break
+## 🛑 Break
 
-- Used to terminate the loop when encountered.
+* Used to terminate the loop when encountered.
 
 ```python
 i = 1
@@ -158,9 +159,11 @@ print("Loop ended because of break statement")
 
 ---
 
-### Continue
+## ⏭️ Continue
 
-- Used to skip the current iteration of the loop and move on to the next iteration.
+* Used to skip the current iteration of the loop and move on to the next iteration.
+
+### Print odd numbers
 
 ```python
 i = 1
@@ -178,6 +181,8 @@ while i <= 10:
 
 ---
 
+### Print even numbers
+
 ```python
 i = 1
 
@@ -190,24 +195,23 @@ while i <= 10:
     i += 1
 ```
 
-<img width="257" height="125" alt="image" src="https://github.com/user-attachments/assets/5da55b7c-c6ed-4d82-86cf-618d43a40377" />
-
+![Output](https://github.com/user-attachments/assets/5da55b7c-c6ed-4d82-86cf-618d43a40377)
 
 ---
 
-# For Loops
+# 🔁 For Loops
 
-- Loops are used for sequential traversal.
-- For traversing list, string, tuples etc.
+* `for` loops are used for sequential traversal.
+* They can be used to traverse lists, strings, tuples, etc.
 
 ```python
 for el in list:
-    # same work
+    # some work
 ```
 
 ---
 
-### List
+## 📋 List
 
 ```python
 list = [1, 2, 3]
@@ -220,7 +224,7 @@ for el in list:
 
 ---
 
-### String List
+## 👥 String List
 
 ```python
 list = ["sahil", "ankita", "varsh", "bhajan"]
@@ -233,7 +237,7 @@ for el in list:
 
 ---
 
-### Tuple
+## 📦 Tuple
 
 ```python
 tup = (1, 2, 3, 4, 2, 8, 9)
@@ -246,7 +250,7 @@ for num in tup:
 
 ---
 
-### String
+## 🔤 String
 
 ```python
 str = "Ankitasahil"
@@ -256,3 +260,294 @@ for char in str:
 ```
 
 ![Output](https://github.com/user-attachments/assets/2d42e807-be0a-480e-901a-915f734439bf)
+
+---
+
+# 🔚 For Loop with `else`
+
+```python
+for el in list:
+    # some work
+
+else:
+    # work when loop ends
+```
+
+The `else` block runs when the `for` loop completes normally, without encountering a `break`.
+
+### Example
+
+```python
+str = "ankita"
+
+for char in str:
+    print(char)
+
+else:
+    print("End")
+```
+
+---
+
+### 🛑 Example with `break`
+
+```python
+str = "ankita"
+
+for char in str:
+    if char == "k":
+        print("k found")
+        break
+
+    print(char)
+
+else:
+    print("End")
+```
+
+❌ The `else` block does **not** execute because the loop was terminated using `break`.
+
+---
+
+### ⏭️ Example with `continue`
+
+```python
+str = "ankita"
+
+for char in str:
+    if char == "k":
+        print("k found")
+        continue
+
+    print(char)
+
+else:
+    print("End")
+```
+
+✅ The `else` block executes because `continue` only skips the current iteration; it does not terminate the loop.
+
+---
+
+# 📝 Let's Practice
+
+### 1️⃣ Print the elements of the following list using a loop
+
+```text
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+
+```python
+nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+for num in nums:
+    print(num)
+```
+
+---
+
+### 2️⃣ Search for a number `X` in this tuple using a loop
+
+```text
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
+
+```python
+nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+x = int(input("Enter your number: "))
+
+idx = 0
+
+for el in nums:
+    if el == x:
+        print("Your number is found at index:", idx)
+
+    idx += 1
+```
+
+---
+
+# 📏 Range()
+
+The `range()` function returns a sequence of numbers.
+
+* Starts from `0` by default.
+* Increases by `1` by default.
+* Stops **before** the specified `stop` value.
+
+```python
+range(start, stop, step)
+```
+
+### 🔹 `range(stop)`
+
+```python
+for i in range(10):
+    print(i)
+```
+
+---
+
+### 🔹 `range(start, stop)`
+
+```python
+for i in range(5, 10):
+    print(i)
+```
+
+---
+
+### 🔹 `range(start, stop, step)`
+
+```python
+for i in range(5, 10, 2):
+    print(i)
+```
+
+Here, `2` is the step value, so the numbers increase by `2`.
+
+---
+
+### 🔢 Another Example
+
+```python
+seq = range(5)
+
+for i in seq:
+    print(i)
+```
+
+Or simply:
+
+```python
+for i in range(5):
+    print(i)
+```
+
+---
+
+### 🟢 Print Even Numbers using `range()`
+
+```python
+for i in range(2, 11, 2):
+    print(i)
+```
+
+---
+
+# 📝 Let's Practice — Using `for` & `range()`
+
+### 1️⃣ Print numbers from 1 to 100
+
+```python
+for nums in range(1, 101):
+    print(nums)
+```
+
+---
+
+### 2️⃣ Print numbers from 100 to 1
+
+```python
+for nums in range(100, 0, -1):
+    print(nums)
+```
+
+---
+
+### 3️⃣ Print the multiplication table of a number `n`
+
+```python
+n = int(input("Enter the number for multiplication table: "))
+
+for nums in range(1, 11):
+    print(n * nums)
+```
+
+---
+
+# ⏸️ Pass Statement
+
+`pass` is a null statement that does nothing.
+
+It is used as a **placeholder for future code**.
+
+```python
+for i in range(5):
+    pass
+```
+
+```python
+if 1 > 4:
+    pass
+
+print("some useful work")
+```
+
+---
+
+# 🧠 Let's Practice
+
+### 1️⃣ WAP to find the sum of first `n` natural numbers using `while`
+
+```python
+n = int(input("Enter n: "))
+
+sum = 0
+i = 1
+
+while i <= n:
+    sum += i
+    i += 1
+
+print("Sum =", sum)
+```
+
+### Using `for` loop
+
+```python
+n = int(input("Enter n: "))
+
+sum = 0
+
+for i in range(1, n + 1):
+    sum += i
+
+print(sum)
+```
+
+---
+
+### 2️⃣ WAP to find the factorial of `n` using `for`
+
+```python
+n = int(input("Enter n: "))
+
+fact = 1
+
+for i in range(1, n + 1):
+    fact *= i
+
+print(fact)
+```
+
+---
+
+# 🎯 Quick Revision
+
+| Concept    | Use                                     |
+| ---------- | --------------------------------------- |
+| `while`    | Repeat while a condition is `True`      |
+| `for`      | Traverse a sequence                     |
+| `break`    | Stop the loop                           |
+| `continue` | Skip current iteration                  |
+| `else`     | Runs when loop finishes without `break` |
+| `range()`  | Generate a sequence of numbers          |
+| `pass`     | Placeholder that does nothing           |
+
+---
+
+## 🚀 Keep Coding!
+
+> **Practice → Make mistakes → Debug → Learn → Repeat.** 🐍💻
