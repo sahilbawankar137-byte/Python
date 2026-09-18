@@ -1,21 +1,23 @@
-# PROGRAMING!
+# 🐍 PROGRAMMING!
 
 ```text
 Machine <------------------ Translator <------------------ Python
 (ex. Laptop, PC)              (ex. Compiler/Interpreter)    (code)
 ```
 
-# What is Python??
+---
 
-- Python is simple & easy
-- Free & open source
-- High level language
-- Developed by Guido Van Rossum
-- Portable
+# 🐍 What is Python?
+
+* Python is simple & easy to learn.
+* Free & open source.
+* High-level programming language.
+* Developed by **Guido van Rossum**.
+* Portable — Python programs can run on different platforms.
 
 ---
 
-# Our First Code
+# 🚀 Our First Code
 
 ```python
 print("hello world")
@@ -29,19 +31,19 @@ hello world ----> Output
 
 ---
 
-# Python Character Set
+# 🔤 Python Character Set
 
-- **Letters** — A–Z, a–z
-- **Digits** — 0–9
-- **Special Symbols** — `-`, `+`, `/`, etc.
-- **Whitespaces** — Blank Space, tab, carriage return, newline, formfeed
-- **Other characters** — Python can process all ASCII and Unicode characters as part of data or literals
+* **Letters** — `A–Z`, `a–z`
+* **Digits** — `0–9`
+* **Special Symbols** — `+`, `-`, `*`, `/`, etc.
+* **Whitespaces** — Blank space, tab, carriage return, newline, formfeed
+* **Other characters** — Python can process ASCII and Unicode characters as part of data or literals.
 
 ---
 
-# Variables
+# 📦 Variables
 
-- A variable is a name given to a memory location in a program.
+* A variable is a name given to a memory location in a program.
 
 ```python
 name = "sahil"
@@ -53,59 +55,134 @@ price = 35.99
 
 ---
 
-# Rules for Identifiers
+# 🏷️ Rules for Identifiers
 
-1. Identifiers can be a combination of uppercase and lowercase letters, digits or an underscore (`_`).
+### 1️⃣ Letters, digits & underscore
 
-   So **myVariable**, **variable_1**, **variable_for_print** all are valid Python identifiers.
+Identifiers can be a combination of uppercase and lowercase letters, digits, or an underscore (`_`).
 
-2. An identifier cannot start with a digit.
+```python
+myVariable = 10
+variable_1 = 20
+variable_for_print = 30
+```
 
-   So while **variable1** is valid, **1variable** is not valid.
-
-3. We can't use special symbols like **#**, **@**, **%**, **$**, etc. in our identifier.
-
-4. Identifier can be of any length.
+All of the above are valid Python identifiers.
 
 ---
 
-# Data Types
+### 2️⃣ Cannot start with a digit
 
-- Integers
-- String
-- Float
-- Boolean
-- None
+An identifier cannot start with a digit.
 
 ```python
-print(type(age))          # <class 'int'>
+variable1 = 10    # ✅ Valid
 
-print(type(pi))           # <class 'float'>
-
-print(type(complex_num))  # <class 'bool'>
-
-print(type(A))            # <class 'complex'>
-
-print(type(name))         # <class 'str'>
+1variable = 10    # ❌ Invalid
 ```
 
 ---
 
-# Keywords
+### 3️⃣ Special symbols are not allowed
 
-- Keywords are reserved words in Python.
+We can't use special symbols like `#`, `@`, `%`, `$`, etc. in identifiers.
 
-> **False** should be uppercase.
+```python
+my_name = "sahil"    # ✅ Valid
+
+my-name = "sahil"    # ❌ Invalid
+```
+
+---
+
+### 4️⃣ Identifier length
+
+An identifier can be of any length.
+
+---
+
+# 📊 Data Types
+
+Python has several built-in data types:
+
+* **Integer** — `int`
+* **String** — `str`
+* **Float** — `float`
+* **Boolean** — `bool`
+* **Complex** — `complex`
+* **None** — `NoneType`
+
+### 🔢 Integer
+
+```python
+age = 23
+
+print(type(age))
+# <class 'int'>
+```
+
+### 🔤 String
+
+```python
+name = "sahil"
+
+print(type(name))
+# <class 'str'>
+```
+
+### 🔢 Float
+
+```python
+price = 35.99
+
+print(type(price))
+# <class 'float'>
+```
+
+### ✅ Boolean
+
+```python
+is_adult = True
+
+print(type(is_adult))
+# <class 'bool'>
+```
+
+### 🧮 Complex
+
+```python
+complex_num = 2 + 3j
+
+print(type(complex_num))
+# <class 'complex'>
+```
+
+### 🚫 None
+
+```python
+A = None
+
+print(type(A))
+# <class 'NoneType'>
+```
+
+---
+
+# 🔑 Keywords
+
+* Keywords are **reserved words** in Python.
+* They have a special meaning and cannot be used as variable names.
+
+> ⚠️ `False` should be written with an uppercase `F`.
 
 ![Python Keywords](https://github.com/user-attachments/assets/adf0e892-62f5-4210-ad5d-a2d1a2e86b49)
 
 ---
 
-# Print Sum
+# ➕ Print Sum
 
 ```python
 a = 2
-
 b = 5
 
 sum = a + b
@@ -115,17 +192,19 @@ print(sum)
 
 ---
 
-# Comments in Python
+# 💬 Comments in Python
 
-### Single Line Comment
+Comments are used to add notes or explanations in code. They are ignored by Python during execution.
 
-- Represented by `#`
+### 📝 Single-Line Comment
+
+* Represented by `#`.
 
 ```python
 # Single Line comment
 ```
 
-### Multi Line Comment
+### 📄 Multi-Line Comment
 
 ```python
 """
@@ -137,45 +216,56 @@ Comment
 
 ---
 
-# Types of Operators
+# ⚙️ Types of Operators
 
 An operator is a symbol that performs a certain operation between operands.
 
-### 1. Arithmetic Operators
+### 1️⃣ Arithmetic Operators
 
 ```text
-+  -  *  /  %  **
++   -   *   /   %   **
 ```
 
-### 2. Relational / Comparison Operators
+### 2️⃣ Relational / Comparison Operators
 
 ```text
-==  !=  <  >  <=  >=
+==   !=   <   >   <=   >=
 ```
 
-### 3. Assignment Operators
+### 3️⃣ Assignment Operators
 
 ```text
-=  +=  -=  /=  %=  **=
+=   +=   -=   *=   /=   %=   **=
 ```
 
-### 4. Logical Operators
+### 4️⃣ Logical Operators
 
 ```text
-not  and  or
+not   and   or
 ```
 
 ---
 
-# Type Conversion
+# 🔄 Type Conversion
+
+Type conversion happens when Python **automatically converts** one data type into another compatible type.
 
 ```python
 a, b = 1, 2.0
 
 sum = a + b
+
+print(sum)
+print(type(sum))
 ```
 
-### Error
+Here, Python converts the integer `1` into a float before performing the addition.
+
+---
+
+### ❌ Error
+
+Different incompatible data types cannot always be operated on directly.
 
 ```python
 a, b = 1, "2"
@@ -183,9 +273,13 @@ a, b = 1, "2"
 sum = a + b
 ```
 
+This gives a **TypeError** because an `int` and a `str` cannot be added directly.
+
 ---
 
-# Type Casting
+# 🎭 Type Casting
+
+Type casting means **manually converting** one data type into another.
 
 ```python
 a, b = 1, "2"
@@ -193,26 +287,42 @@ a, b = 1, "2"
 c = int(b)
 
 sum = a + c
+
+print(sum)
 ```
 
 ![Type Casting](https://github.com/user-attachments/assets/9a5e8326-da65-46cd-8774-417549efd897)
 
 ---
 
-# Input in Python
+# ⌨️ Input in Python
 
-- `input()` statement is used to accept values using the keyboard from the user.
+* The `input()` function is used to accept values from the user through the keyboard.
 
 ```python
 input()
 ```
 
-- Result for `input()` is always a `str`.
+### 📌 Input Data Types
+
+The result returned by `input()` is always a `str`.
 
 ```python
-input()       # str
+input()          # str
 
-int(input())  # int
+int(input())     # int
 
-float(input()) # float
+float(input())   # float
+```
+
+### Example
+
+```python
+name = input("Enter your name: ")
+
+print(name)
+```
+
+```python
+age = int(input("Enter your age: "
 ```
