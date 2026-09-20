@@ -47,10 +47,7 @@ f = open("file_name", "mode")
 Example:
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "r"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","r")
 
 data = f.read()
 
@@ -96,10 +93,7 @@ f.close()
 `read()` reads the **entire file**.
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "r"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","r")
 
 data = f.read()
 
@@ -115,10 +109,7 @@ f.close()
 `readline()` reads **one line at a time**.
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "r"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","r")
 
 line1 = f.readline()
 
@@ -136,10 +127,7 @@ f.close()
 `w` writes data to a file and **overwrites the existing content**.
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "w"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","w")
 
 f.write("This is a new line")
 
@@ -167,10 +155,7 @@ f.close()
 ## 📝 Writing Multiple Lines
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "w"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","w")
 
 f.write("I want to learn mathematics tomorrow")
 f.write("\nI love programming")
@@ -205,10 +190,7 @@ f.close()
 `r+` allows us to **read and write**.
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "r+"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","r+")
 
 print(f.read())
 
@@ -218,10 +200,7 @@ f.close()
 ### We can also write:
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "r+"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","r+")
 
 f.write("abc")
 
@@ -239,10 +218,7 @@ f.close()
 `w+` allows **writing and reading**, but it first **truncates the file**.
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "w+"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","w+")
 
 print(f.read())
 
@@ -258,10 +234,7 @@ Because `w+` truncates the file, the existing content is removed.
 `a+` allows **appending and reading**.
 
 ```python
-f = open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "a+"
-)
+f = open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","a+")
 
 f.write("abc")
 
@@ -315,10 +288,7 @@ with open("demo.txt", "w") as f:
 ### Reading & Writing
 
 ```python
-with open(
-    r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt",
-    "r+"
-) as f:
+with open(r"C:\Users\sahil\OneDrive\Apps\Clipchamp Classic\demo.txt","r+") as f:
     data = f.read()
     print(data)
 ```
