@@ -1,18 +1,16 @@
 # 🐍 OOP in Python
 
-**OOP = Object-Oriented Programming**
+To map real-world scenarios into code, we started using **objects**.
 
-To map real-world scenarios into code, we use **objects**.
-
-This approach is called **Object-Oriented Programming (OOP)**.
+This is called **Object-Oriented Programming (OOP)**.
 
 ---
 
 # 🧱 Class & Object in Python
 
-### What is a Class?
+### Class
 
-A **class** is a blueprint/template for creating objects.
+A **class** is a blueprint for creating objects.
 
 ### Creating a Class
 
@@ -29,7 +27,7 @@ s1 = Student()
 print(s1.name)
 ```
 
-### Multiple Objects
+### Example
 
 ```python
 class Student:
@@ -42,16 +40,15 @@ s2 = Student()
 print(s2.name)
 ```
 
-Both `s1` and `s2` are objects of the `Student` class.
-
 ---
 
-### Example: Car
+### 🚗 Example: Car
 
 ```python
 class Car:
     color = "blue"       # Class Attribute
     brand = "Mercedes"   # Class Attribute
+
 
 car1 = Car()             # Object
 
@@ -59,32 +56,22 @@ print(car1.color)
 print(car1.brand)
 ```
 
-**Output:**
-
-```text
-blue
-Mercedes
-```
-
 ---
 
 # ⚙️ `__init__()` Function
 
-`__init__()` is a special method that is automatically executed when an object is created.
+## Constructor
 
-It is commonly called a **constructor**.
+`__init__()` is a special function that is automatically executed when an object is created.
 
-### Creating a Class
+### Example
 
 ```python
 class Student:
     def __init__(self, fullname):
         self.name = fullname
-```
 
-### Creating an Object
 
-```python
 s1 = Student("karan")
 
 print(s1.name)
@@ -98,25 +85,7 @@ karan
 
 ---
 
-### Example
-
-```python
-class Student:
-    def __init__(self, fullname):
-        print("Adding new student in Database.")
-
-s1 = Student("sahil")
-```
-
-**Output:**
-
-```text
-Adding new student in Database.
-```
-
----
-
-### Using Multiple Parameters
+### Example with Multiple Parameters
 
 ```python
 class Student:
@@ -136,24 +105,13 @@ s2 = Student("arjun", 97)
 print(s2.name, s2.marks)
 ```
 
-**Output:**
-
-```text
-Adding new student in Database..
-sahil 99
-Adding new student in Database..
-arjun 97
-```
-
 ---
 
-## 🧍 What is `self`?
+## 🧍 `self` Parameter
 
-The `self` parameter is a reference to the **current object (instance)** of the class.
+The `self` parameter is a reference to the **current instance/object** of the class.
 
-It is used to access variables and methods belonging to that object.
-
-Example:
+It is used to access variables and methods that belong to the object.
 
 ```python
 class Student:
@@ -172,8 +130,6 @@ Here:
 # 🔹 Types of Constructors
 
 ## 1. Default Constructor
-
-A constructor that does not take additional parameters.
 
 ```python
 class Student:
@@ -198,24 +154,22 @@ class Student:
 
 # 📌 Class & Instance Attributes
 
-There are two common types of attributes:
+## Class Attribute
 
-### Class Attribute
-
-A **class attribute** belongs to the class and is shared by all objects of that class.
+A **class attribute** belongs to the class and is shared by its objects.
 
 ```python
 class Student:
     college_name = "ABC College"
 ```
 
-Access using:
+Access:
 
 ```python
 Student.college_name
 ```
 
-or
+or:
 
 ```python
 s1.college_name
@@ -223,7 +177,7 @@ s1.college_name
 
 ---
 
-### Instance Attribute
+## Instance Attribute
 
 An **instance attribute** belongs to a particular object.
 
@@ -236,7 +190,7 @@ class Student:
         self.marks = marks
 ```
 
-Access using:
+Access:
 
 ```python
 s1.name
@@ -263,12 +217,12 @@ print(s1.college_name)
 
 ### Quick Difference
 
-| Type               | Belongs To | Example                |
+| Attribute          | Belongs To | Example                |
 | ------------------ | ---------- | ---------------------- |
 | Class Attribute    | Class      | `Student.college_name` |
 | Instance Attribute | Object     | `s1.name`              |
 
-> **Instance attributes generally take priority over class attributes when both have the same name.**
+> If a class attribute and instance attribute have the same name, the **instance attribute gets priority** when accessed through the object.
 
 ---
 
@@ -290,12 +244,6 @@ class Student:
 s1 = Student("karan")
 
 s1.hello()
-```
-
-**Output:**
-
-```text
-Hello karan
 ```
 
 ---
@@ -324,22 +272,15 @@ s1.welcome()
 print("Your mark is:", s1.get_marks())
 ```
 
-**Output:**
-
-```text
-Welcome student, sahil
-Your mark is: 99
-```
-
 ---
 
 # 📝 Let's Practice
 
 ### Question
 
-Create a `Student` class that takes **name** and **marks of 3 subjects** as arguments in the constructor.
+Create a `Student` class that takes **name** and marks of 3 subjects as arguments in the constructor.
 
-Then create a method to print the **average marks**.
+Then create a method to print the average.
 
 ### Solution
 
@@ -363,24 +304,12 @@ s1 = Student("Tony Stark", [99, 98, 97])
 s1.get_avg()
 ```
 
-**Output:**
-
-```text
-Hi Tony Stark your avg score is: 98.0
-```
-
-### Changing Instance Attribute
+### Changing an Instance Attribute
 
 ```python
 s1.name = "Ironman"
 
 s1.get_avg()
-```
-
-Now the output becomes:
-
-```text
-Hi Ironman your avg score is: 98.0
 ```
 
 ---
@@ -404,17 +333,11 @@ s1 = Student()
 s1.hello()
 ```
 
-**Output:**
-
-```text
-Hello
-```
-
 ---
 
 ## 🎀 Decorators
 
-**Decorators** allow us to extend the behavior of a function without permanently modifying the original function.
+Decorators allow us to extend the behavior of a function without permanently modifying the original function.
 
 Example:
 
@@ -426,11 +349,11 @@ Here, `@staticmethod` is a decorator.
 
 ---
 
-# 🚗 Important OOP Concepts
+# 🧠 Important OOP Concepts
 
 ## 1. Abstraction
 
-**Abstraction** means hiding the implementation details and showing only the essential features to the user.
+**Abstraction** means hiding the implementation details of a class and showing only the essential features to the user.
 
 ### Example
 
@@ -465,9 +388,9 @@ The internal implementation is hidden.
 
 # 🔒 2. Encapsulation
 
-**Encapsulation** means wrapping data and functions together into a single unit (object).
+**Encapsulation** means wrapping data and functions into a single unit (object).
 
-Example:
+### Example
 
 ```python
 class Account:
@@ -500,37 +423,636 @@ acc1.debit(100000)
 acc1.credit(499)
 ```
 
-Here, **data** (`balance`, `account_no`) and **methods** (`debit`, `credit`, `get_balance`) are wrapped together inside the `Account` class.
+---
+
+# 🗑️ `del` Keyword
+
+The `del` keyword is used to delete **object properties** or an **object itself**.
+
+### Example
+
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+
+s1 = Student("sahil")
+
+del s1.name
+
+print(s1.name)   # Error
+```
+
+After `del s1.name`, the `name` attribute no longer exists.
+
+---
+
+# 🔐 Private Attributes & Methods
+
+Python does not have strict private members like some other languages, but we can use `__` to indicate that an attribute or method is intended for internal use.
+
+## Normal Code
+
+```python
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self.acc_pass = acc_pass
+
+
+acc1 = Account("12345", "abcde")
+
+print(acc1.acc_no)
+print(acc1.acc_pass)
+```
+
+---
+
+## Private-like Attribute
+
+```python
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self.__acc_pass = acc_pass
+
+    def reset_pass(self):
+        print(self.__acc_pass)
+
+
+acc1 = Account("12345", "abcde")
+
+print(acc1.acc_no)
+
+# print(acc1.__acc_pass)  # Error
+
+acc1.reset_pass()
+```
+
+`__acc_pass` cannot be accessed directly from outside the class using its normal name.
+
+---
+
+### Private Method Example
+
+```python
+class Person:
+    __name = "anonymous"
+
+    def __hello(self):
+        print("Hello person!")
+
+    def welcome(self):
+        self.__hello()
+
+
+p1 = Person()
+
+p1.welcome()
+```
+
+Here, `__hello()` is a private-like method and is called internally through `welcome()`.
+
+---
+
+# 🧬 Inheritance
+
+**Inheritance** is when one class (child/derived class) derives properties and methods from another class (parent/base class).
+
+### Basic Syntax
+
+```python
+class Car:
+    pass
+
+
+class ToyotaCar(Car):
+    pass
+```
+
+---
+
+### Example
+
+```python
+class Car:
+    color = "black"
+
+    @staticmethod
+    def start():
+        print("Car started..")
+
+    @staticmethod
+    def stop():
+        print("Car stopped.")
+
+
+class ToyotaCar(Car):
+    def __init__(self, name):
+        self.name = name
+
+
+car1 = ToyotaCar("Fortuner")
+car2 = ToyotaCar("Prius")
+
+print("Your car name is:", car1.name)
+print("Your car color is:", car1.color)
+
+car1.start()
+car1.stop()
+```
+
+`ToyotaCar` inherits `color`, `start()` and `stop()` from `Car`.
+
+---
+
+# 🔗 Types of Inheritance
+
+* **Single Inheritance**
+* **Multilevel Inheritance**
+* **Multiple Inheritance**
+
+---
+
+## 1. Multilevel Inheritance
+
+```python
+class Car:
+    @staticmethod
+    def start():
+        print("Car started..")
+
+    @staticmethod
+    def stop():
+        print("Car stopped.")
+
+
+class ToyotaCar(Car):
+    def __init__(self, name):
+        self.name = name
+
+
+class Fortuner(ToyotaCar):
+    def __init__(self, type):
+        self.type = type
+
+
+car1 = Fortuner("Diesel")
+
+car1.start()
+```
+
+Here:
+
+```text
+Car
+ ↓
+ToyotaCar
+ ↓
+Fortuner
+```
+
+---
+
+## 2. Multiple Inheritance
+
+A class can inherit from more than one parent class.
+
+```python
+class A:
+    varA = "Welcome to class A"
+
+
+class B:
+    varB = "Welcome to class B"
+
+
+class C(A, B):
+    varC = "Welcome to class C"
+
+
+c1 = C()
+
+print(c1.varC)
+print(c1.varB)
+print(c1.varA)
+```
+
+---
+
+# 🦸 `super()` Method
+
+The `super()` method is used to access methods and the constructor of the parent class.
+
+```python
+class Car:
+    def __init__(self, type):
+        self.type = type
+
+    @staticmethod
+    def start():
+        print("Car started..")
+
+    @staticmethod
+    def stop():
+        print("Car stopped.")
+
+
+class ToyotaCar(Car):
+    def __init__(self, name, type):
+        self.name = name
+
+        super().__init__(type)
+        super().start()
+
+
+car1 = ToyotaCar("Prius", "Electric")
+
+print(car1.type)
+```
+
+---
+
+# 🏫 Class Method
+
+A **class method** is bound to the class and receives the class as its first argument, usually named `cls`.
+
+It is created using the `@classmethod` decorator.
+
+```python
+class Student:
+
+    @classmethod
+    def college(cls):
+        print("ABC College")
+```
+
+### Three Different Types of Methods
+
+| Method          | First Parameter | Used For          |
+| --------------- | --------------- | ----------------- |
+| Static Method   | None            | Utility functions |
+| Class Method    | `cls`           | Class-level data  |
+| Instance Method | `self`          | Object-level data |
+
+---
+
+# 👤 Class Method Example
+
+### Instance Method
+
+```python
+class Person:
+    name = "anonymous"
+
+    def changeName(self, name):
+        self.name = name
+
+
+p1 = Person()
+
+p1.changeName("Sahil")
+
+print(p1.name)
+print(Person.name)
+```
+
+Output:
+
+```text
+Sahil
+anonymous
+```
+
+Here, `self.name` creates/changes the **instance attribute**, not the class attribute.
+
+---
+
+### Changing Class Attribute
+
+```python
+class Person:
+    name = "anonymous"
+
+    def changeName(self, name):
+        Person.name = name
+
+
+p1 = Person()
+
+p1.changeName("Sahil")
+
+print(p1.name)
+print(Person.name)
+```
+
+Now the class attribute is changed.
+
+---
+
+### Using `self.__class__`
+
+```python
+class Person:
+    name = "anonymous"
+
+    def changeName(self, name):
+        self.__class__.name = name
+
+
+p1 = Person()
+
+p1.changeName("Sahil")
+
+print(p1.name)
+print(Person.name)
+```
+
+---
+
+### Using `@classmethod`
+
+```python
+class Person:
+    name = "anonymous"
+
+    @classmethod
+    def changeName(cls, name):
+        cls.name = name
+
+
+p1 = Person()
+
+p1.changeName("Sahil")
+
+print(p1.name)
+print(Person.name)
+```
+
+This is the cleaner way to modify class-level data.
+
+---
+
+# 🏷️ Property
+
+We use the `@property` decorator to make a method behave like an attribute.
+
+### Example
+
+```python
+class Student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+
+    @property
+    def percentage(self):
+        return str((self.phy + self.chem + self.math) / 3) + "%"
+
+
+stu1 = Student(89, 90, 99)
+
+print(stu1.percentage)
+```
+
+If marks are changed:
+
+```python
+stu1.phy = 86
+
+print(stu1.percentage)
+```
+
+The percentage is automatically recalculated.
+
+---
+
+# 🔄 Polymorphism
+
+**Polymorphism** means the same operator/function can have different meanings depending on the context.
+
+## Operator Overloading
+
+Python uses **dunder methods** to implement operator overloading.
+
+### Operators & Dunder Functions
+
+| Operator | Dunder Function    |
+| -------- | ------------------ |
+| `a + b`  | `a.__add__(b)`     |
+| `a - b`  | `a.__sub__(b)`     |
+| `a * b`  | `a.__mul__(b)`     |
+| `a / b`  | `a.__truediv__(b)` |
+| `a % b`  | `a.__mod__(b)`     |
+
+### Examples
+
+```python
+print(1 + 2)                  # 3
+
+print("sahil" + "bawankar")   # sahilbawankar
+
+print([1, 2, 3] + [4, 5, 6])  # [1, 2, 3, 4, 5, 6]
+```
+
+The `+` operator behaves differently depending on the data type.
+
+---
+
+# 🔢 Operator Overloading with Custom Classes
+
+```python
+class Complex:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+
+    def showNumber(self):
+        print(self.real, "i +", self.img, "j")
+
+    def __add__(self, num2):
+        newReal = self.real + num2.real
+        newImg = self.img + num2.img
+
+        return Complex(newReal, newImg)
+
+    def __sub__(self, num2):
+        newReal = self.real - num2.real
+        newImg = self.img - num2.img
+
+        return Complex(newReal, newImg)
+
+    def __mul__(self, num2):
+        newReal = self.real * num2.real
+        newImg = self.img * num2.img
+
+        return Complex(newReal, newImg)
+
+
+num1 = Complex(1, 3)
+num1.showNumber()
+
+num2 = Complex(4, 6)
+num2.showNumber()
+
+num3 = num1 + num2
+num3.showNumber()
+```
+
+---
+
+# 📝 Let's Practice
+
+## 1. Circle Class
+
+Define a `Circle` class to create a circle with radius `r` using the constructor.
+
+Define:
+
+* `area()` method to calculate the area.
+* `perimeter()` method to calculate the perimeter.
+
+### Solution
+
+```python
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return (22 / 7) * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * (22 / 7) * self.radius
+
+
+c1 = Circle(21)
+
+print(c1.area())
+print(c1.perimeter())
+```
+
+---
+
+## 2. Employee & Engineer
+
+Create an `Employee` class with attributes:
+
+* `role`
+* `department`
+* `salary`
+
+The class should also have a `showDetails()` method.
+
+Create an `Engineer` class that inherits from `Employee` and has additional attributes:
+
+* `name`
+* `age`
+
+### Solution
+
+```python
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
+
+    def showDetails(self):
+        print("Role =", self.role)
+        print("Department =", self.dept)
+        print("Salary =", self.salary)
+
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+        super().__init__("Engineer", "IT", 75000)
+
+
+engg1 = Engineer("Sahil", 18)
+
+engg1.showDetails()
+```
+
+---
+
+## 3. Order & `__gt__()`
+
+Create a class called `Order` which stores an item and its price.
+
+Use the dunder function `__gt__()` to compare two orders.
+
+`order1 > order2` should return `True` if the price of `order1` is greater than the price of `order2`.
+
+### Solution
+
+```python
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, order2):
+        return self.price > order2.price
+
+
+order1 = Order("Chips", 20)
+order2 = Order("Tea", 15)
+
+print(order1 > order2)
+```
+
+**Output:**
+
+```text
+True
+```
 
 ---
 
 # 🧠 OOP Quick Revision
 
-| Concept                | Meaning                                    |
-| ---------------------- | ------------------------------------------ |
-| **Class**              | Blueprint for creating objects             |
-| **Object**             | Instance of a class                        |
-| `__init__()`           | Constructor, runs when object is created   |
-| `self`                 | Reference to the current object            |
-| **Class Attribute**    | Attribute shared by the class/objects      |
-| **Instance Attribute** | Attribute belonging to a particular object |
-| **Method**             | Function inside a class                    |
-| `@staticmethod`        | Creates a method that doesn't use `self`   |
-| **Decorator**          | Extends/modifies function behavior         |
-| **Abstraction**        | Hides implementation details               |
-| **Encapsulation**      | Combines data and methods into one unit    |
+| Concept                | Meaning                                  |
+| ---------------------- | ---------------------------------------- |
+| **Class**              | Blueprint for creating objects           |
+| **Object**             | Instance of a class                      |
+| `__init__()`           | Constructor                              |
+| `self`                 | Reference to current object              |
+| **Class Attribute**    | Shared class-level attribute             |
+| **Instance Attribute** | Object-specific attribute                |
+| **Method**             | Function inside a class                  |
+| `@staticmethod`        | Method without `self`                    |
+| `@classmethod`         | Method that receives `cls`               |
+| `@property`            | Makes a method behave like an attribute  |
+| **Abstraction**        | Hides implementation details             |
+| **Encapsulation**      | Combines data and methods                |
+| **Inheritance**        | Child class gets features of parent      |
+| `super()`              | Access parent class functionality        |
+| **Polymorphism**       | Same operation with different behavior   |
+| **Dunder Method**      | Special methods like `__add__`, `__gt__` |
 
 ---
 
-## 🔥 Key Takeaways
+# 🔥 Key Takeaways
 
 * **Class** → Blueprint
-* **Object** → Real instance created from the blueprint
+* **Object** → Instance of a class
 * `__init__()` → Automatically runs when an object is created
 * `self` → Refers to the current object
 * **Class Attribute** → Shared at class level
 * **Instance Attribute** → Specific to an object
 * **Method** → Function inside a class
 * `@staticmethod` → Method without `self`
+* `@classmethod` → Method with `cls`
+* `@property` → Method accessed like an attribute
 * **Abstraction** → Hide unnecessary implementation details
-* **Encapsulation** → Bundle data + methods together
+* **Encapsulation** → Bundle data + methods
+* **Inheritance** → Reuse parent class properties/methods
+* `super()` → Access parent class
+* **Polymorphism** → Same operator, different behavior
+* **Dunder Methods** → Special methods used by Python operators
